@@ -27,24 +27,30 @@ public class Principal {
         casaDragon.muestraFichaTecnica();
         System.out.println(casaDragon.getDuracionEnMinutos());
 
+        Pelicula otraPelicula = new Pelicula();
+        otraPelicula.setNombre("Matri");
+        otraPelicula.setFechaDeLanzamiento(1998);
+        otraPelicula.setDuracionEnMinutos(120);
+
+
         CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
         calculadora.incluye(pellicula);
         calculadora.incluye(casaDragon);
-        System.out.println(calculadora.getTiempoTotal());
+        calculadora.incluye(otraPelicula);
+        System.out.println("Tiempo necesario para ver los Titulos que seleccionaste "
+                + calculadora.getTiempoTotal()+ " Minutos");
 
 
 
 
 
 
-        //crear otro objeto Pelicual
 
-       /* com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
-        otraPelicula.nombre = "Matrix";
-        otraPelicula.fechaDeLanzamiento = 1998;
-        otraPelicula.duracionEnMinutos = 120;
 
-        otraPelicula.muestraFichaTecnica();*/
+
+
+
+
 
 
 

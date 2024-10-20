@@ -5,4 +5,5 @@ public interface Clasificacion { //La interface es como un contrato donde se req
     //En una interface todos los metosdos son publicos
 
 
+
 }
